@@ -8,40 +8,41 @@ use log::{info, error};
 use crate::models::product::Product;
 use crate::dto::product_dto::{CreateProduct, UpdateProduct};
 use crate::errors::ApiError;
+use crate::validations::product_validations;
 
 pub type Store = Arc<RwLock<HashMap<Uuid, Product>>>;
 
 pub struct ProductRepository;
 
 impl ProductRepository {
-    pub fn create(
-        map: &mut HashMap<Uuid, Product>,
-        dto: CreateProduct,
-    ) -> Result<Product, ApiError> {
-        info!("Criando produto (sku = {}, ean13 = {})", dto.sku, dto.ean13);
+        pub fn create(
+            map: &mut HashMap<Uuid, Product>,
+            dto: CreateProduct,
+        ) -> Result<Product, ApiError> {
+            info!("Criando produto (sku = {}, ean13 = {})", dto.sku, dto.ean13);
 
-        Self::validate_create(&dto)?;
-        Self::ensure_unique(&map, &dto.sku, &dto.ean13, None)?;
+            product_validations::ensure_unique(&map, &dto.sku, &dto.ean13, None)?;
+            product_validations::validate_create(&dto)?;
 
-        let now = Utc::now();
-        let product = Product {
-            id: Uuid::new_v4(),
-            sku: dto.sku,
-            product_name: dto.product_name,
-            category: dto.category,
-            ean13: dto.ean13,
-            price_cents: dto.price_cents,
-            currency: dto.currency.unwrap_or_else(|| "BRL".to_string()),
-            stock_count: dto.stock_count,
-            created_at: now,
-            updated_at: now,
-        };
+            let now = Utc::now();
+            let product = Product {
+                id: Uuid::new_v4(),
+                sku: dto.sku,
+                product_name: dto.product_name,
+                category: dto.category,
+                ean13: dto.ean13,
+                price_cents: dto.price_cents,
+                currency: dto.currency.unwrap_or_else(|| "BRL".to_string()),
+                stock_count: dto.stock_count,
+                created_at: now,
+                updated_at: now,
+            };
 
-        map.insert(product.id, product.clone());
+            map.insert(product.id, product.clone());
 
-        info!("Produto criado com sucesso (id = {})", product.id);
-        Ok(product)
-    }
+            info!("Produto criado com sucesso (id = {})", product.id);
+            Ok(product)
+        }
 
     pub fn get(map: &HashMap<Uuid, Product>, id: &Uuid) -> Result<Product, ApiError> {
         info!("Buscando produto (id = {})", id);
@@ -60,7 +61,7 @@ impl ProductRepository {
     ) -> Result<Product, ApiError> {
         info!("Atualizando produto (id = {})", id);
 
-        Self::validate_patch(&dto)?;
+        product_validations::validate_patch(&dto)?;
 
         let (new_sku, new_ean) = {
             let existing = map.get(&id).ok_or(ApiError::NotFound)?;
@@ -70,7 +71,7 @@ impl ProductRepository {
             )
         };
 
-        Self::ensure_unique(&map, &new_sku, &new_ean, Some(id))?;
+        product_validations::ensure_unique(&map, &new_sku, &new_ean, Some(id))?;
 
         let existing = map.get_mut(&id).ok_or(ApiError::NotFound)?;
 
@@ -100,35 +101,6 @@ impl ProductRepository {
                 Err(ApiError::NotFound)
             }
         }
-    }
-
-    pub fn validate_create(dto: &CreateProduct) -> Result<(), ApiError> {
-        if dto.sku.is_empty() || dto.ean13.is_empty() {
-            error!("Falha na validação: SKU ou EAN13 vazio");
-            return Err(ApiError::BadRequest("SKU ou EAN13 vazio".into()));
-        }
-        Ok(())
-    }
-
-    pub fn validate_patch(_dto: &UpdateProduct) -> Result<(), ApiError> {
-        Ok(())
-    }
-
-    pub fn ensure_unique(
-        map: &HashMap<Uuid, Product>,
-        sku: &str,
-        ean: &str,
-        id: Option<Uuid>,
-    ) -> Result<(), ApiError> {
-        for (_, p) in map {
-            if Some(p.id) != id {
-                if p.sku == sku || p.ean13 == ean {
-                    error!("Violação de unicidade: SKU ou EAN13 já existe (sku = {}, ean13 = {})", sku, ean);
-                    return Err(ApiError::BadRequest("SKU ou EAN13 já existe".into()));
-                }
-            }
-        }
-        Ok(())
     }
 }
 

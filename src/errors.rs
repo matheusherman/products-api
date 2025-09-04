@@ -6,6 +6,7 @@ use std::fmt;
 pub enum ApiError {
     NotFound,
     BadRequest(String),
+    Conflict(String), 
     Internal,
 }
 
@@ -14,6 +15,7 @@ impl fmt::Display for ApiError {
         match self {
             ApiError::NotFound => write!(f, "Not found"),
             ApiError::BadRequest(msg) => write!(f, "Bad request: {}", msg),
+            ApiError::Conflict(msg) => write!(f, "Conflict: {}", msg),
             ApiError::Internal => write!(f, "Internal server error"),
         }
     }
@@ -24,6 +26,7 @@ impl ResponseError for ApiError {
         match self {
             ApiError::NotFound => HttpResponse::NotFound().body("Not found"),
             ApiError::BadRequest(msg) => HttpResponse::BadRequest().body(msg.clone()),
+            ApiError::Conflict(msg) => HttpResponse::Conflict().body(msg.clone()),
             ApiError::Internal => HttpResponse::InternalServerError().body("Internal server error"),
         }
     }

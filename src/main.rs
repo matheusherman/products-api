@@ -1,5 +1,6 @@
 use actix_web::{App, HttpServer};
 use std::{collections::HashMap, sync::{Arc, RwLock}};
+use actix_web::middleware::Logger;
 use uuid::Uuid;
 use std::env;
 
@@ -8,6 +9,7 @@ mod dto;
 mod repository;
 mod routes;
 mod handlers;
+mod validations;
 pub mod errors;
 
 use models::product::Product;
@@ -36,6 +38,7 @@ async fn main() -> std::io::Result<()> {
 
     HttpServer::new(move || {
         App::new()
+            .wrap(Logger::default())
             .app_data(actix_web::web::Data::new(store.clone()))
             .configure(config_product_routes)
     })

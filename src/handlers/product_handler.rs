@@ -16,12 +16,17 @@ use crate::{
 pub async fn create_product(
     state: Data<Store>,
     Json(body): Json<CreateProduct>,
-) -> Result<Json<Product>, ApiError> {
+) -> Result<HttpResponse, ApiError> {
     info!(">> Entrou no handler: create_product (sku = {})", body.sku);
+
     let mut repo = state.write().map_err(|_| ApiError::Internal)?;
     let product = ProductRepository::create(&mut repo, body)?;
-    Ok(Json(product))
+
+    Ok(HttpResponse::Created().json(product))
 }
+
+
+
 
 pub async fn get_product(
     state: Data<Store>,
