@@ -1,0 +1,551 @@
+{
+"products": [
+{
+"id": "240e1797-2ccc-4ae8-acf0-55e3efb8f485",
+"product_name": "Wireless Mouse Pro",
+"category": "grocery",
+"sku": "SKU-744717",
+"ean13": "7899292917339",
+"price_cents": 26528,
+"currency": "BRL",
+"stock_count": 25,
+"status": "active",
+"dimensions": {
+"weight_grams": 1090,
+"width_cm": 27.6,
+"height_cm": 3.9,
+"depth_cm": 21.6
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"grocery",
+"standard"
+]
+},
+"created_at": "2025-08-04T21:28:39Z",
+"updated_at": "2025-08-04T21:28:39Z"
+},
+{
+"id": "f3c8ec77-5961-4772-b7d9-00f1958d015b",
+"product_name": "Stainless Steel Water Bottle 1L",
+"category": "electronics",
+"sku": "SKU-679478",
+"ean13": "7891128341305",
+"price_cents": 18637,
+"currency": "BRL",
+"stock_count": 56,
+"status": "active",
+"dimensions": {
+"weight_grams": 1834,
+"width_cm": 11.3,
+"height_cm": 16.8,
+"depth_cm": 39.8
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"electronics",
+"standard"
+]
+},
+"created_at": "2025-08-13T01:09:25Z",
+"updated_at": "2025-08-13T01:09:25Z"
+},
+{
+"id": "88832597-a1a0-4d9f-9be5-cd8bcaed4cc7",
+"product_name": "Organic Arabica Coffee 500g",
+"category": "beauty",
+"sku": "SKU-913108",
+"ean13": "7894626246470",
+"price_cents": 43390,
+"currency": "BRL",
+"stock_count": 115,
+"status": "active",
+"dimensions": {
+"weight_grams": 3138,
+"width_cm": 20.6,
+"height_cm": 26.6,
+"depth_cm": 31.3
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"beauty",
+"standard"
+]
+},
+"created_at": "2025-08-12T01:02:06Z",
+"updated_at": "2025-08-12T01:02:06Z"
+},
+{
+"id": "8acd1d1a-b3a8-479c-b3af-ac92192beb1f",
+"product_name": "Hardcover Notebook A5",
+"category": "pets",
+"sku": "SKU-210375",
+"ean13": "7892214650540",
+"price_cents": 13418,
+"currency": "BRL",
+"stock_count": 116,
+"status": "active",
+"dimensions": {
+"weight_grams": 4144,
+"width_cm": 37.0,
+"height_cm": 11.5,
+"depth_cm": 11.2
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"pets",
+"standard"
+]
+},
+"created_at": "2025-08-14T10:12:37Z",
+"updated_at": "2025-08-14T10:12:37Z"
+},
+{
+"id": "63e5f2a7-05d3-4b7f-8d2f-cb60019a1920",
+"product_name": "Bluetooth Headphones Lite",
+"category": "beauty",
+"sku": "SKU-740861",
+"ean13": "7893354293397",
+"price_cents": 18091,
+"currency": "BRL",
+"stock_count": 166,
+"status": "active",
+"dimensions": {
+"weight_grams": 1401,
+"width_cm": 24.1,
+"height_cm": 37.5,
+"depth_cm": 6.2
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"beauty",
+"standard"
+]
+},
+"created_at": "2025-08-31T12:21:26Z",
+"updated_at": "2025-08-31T12:21:26Z"
+},
+{
+"id": "92f6da4b-24b3-4c9c-8bd8-37a19af3d36f",
+"product_name": "Kids Building Blocks Set 100pcs",
+"category": "beauty",
+"sku": "SKU-666007",
+"ean13": "7890782214015",
+"price_cents": 31137,
+"currency": "BRL",
+"stock_count": 233,
+"status": "active",
+"dimensions": {
+"weight_grams": 2070,
+"width_cm": 27.6,
+"height_cm": 22.4,
+"depth_cm": 26.0
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"beauty",
+"standard"
+]
+},
+"created_at": "2025-08-11T12:28:32Z",
+"updated_at": "2025-08-11T12:28:32Z"
+},
+{
+"id": "ea7a6b2f-2f21-4f82-9be1-9b6b937f81cb",
+"product_name": "Vitamin C 1000mg 60 caps",
+"category": "beauty",
+"sku": "SKU-423645",
+"ean13": "7890469489279",
+"price_cents": 16548,
+"currency": "BRL",
+"stock_count": 77,
+"status": "active",
+"dimensions": {
+"weight_grams": 1431,
+"width_cm": 12.8,
+"height_cm": 6.5,
+"depth_cm": 39.9
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"beauty",
+"standard"
+]
+},
+"created_at": "2025-08-21T10:23:54Z",
+"updated_at": "2025-08-21T10:23:54Z"
+},
+{
+"id": "3522f5c4-d5ec-42d4-9ca3-0fcda3283206",
+"product_name": "Gel Ink Pen 0.5mm 10-pack",
+"category": "books",
+"sku": "SKU-356584",
+"ean13": "7890906260991",
+"price_cents": 12887,
+"currency": "BRL",
+"stock_count": 47,
+"status": "active",
+"dimensions": {
+"weight_grams": 2104,
+"width_cm": 24.6,
+"height_cm": 28.0,
+"depth_cm": 23.1
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"books",
+"standard"
+]
+},
+"created_at": "2025-08-26T20:12:18Z",
+"updated_at": "2025-08-26T20:12:18Z"
+},
+{
+"id": "66c04868-6cca-4e8a-8b79-8b5f47b958db",
+"product_name": "USB-C Charger 30W",
+"category": "office",
+"sku": "SKU-696226",
+"ean13": "7891936469158",
+"price_cents": 42306,
+"currency": "BRL",
+"stock_count": 72,
+"status": "active",
+"dimensions": {
+"weight_grams": 3630,
+"width_cm": 34.4,
+"height_cm": 8.6,
+"depth_cm": 39.3
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"office",
+"standard"
+]
+},
+"created_at": "2025-08-08T02:08:48Z",
+"updated_at": "2025-08-08T02:08:48Z"
+},
+{
+"id": "6d0a3a3e-7edb-44de-b63a-dbcc593ce0f5",
+"product_name": "Yoga Mat Non-slip",
+"category": "office",
+"sku": "SKU-614508",
+"ean13": "7893097176333",
+"price_cents": 27157,
+"currency": "BRL",
+"stock_count": 146,
+"status": "active",
+"dimensions": {
+"weight_grams": 1673,
+"width_cm": 11.6,
+"height_cm": 9.9,
+"depth_cm": 8.4
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"office",
+"standard"
+]
+},
+"created_at": "2025-08-27T16:31:08Z",
+"updated_at": "2025-08-27T16:31:08Z"
+},
+{
+"id": "bc77f4d8-f9ab-44a6-9a0b-6677582b046f",
+"product_name": "Cat Dry Food 2kg",
+"category": "beauty",
+"sku": "SKU-468604",
+"ean13": "7897709712151",
+"price_cents": 20642,
+"currency": "BRL",
+"stock_count": 123,
+"status": "active",
+"dimensions": {
+"weight_grams": 2308,
+"width_cm": 34.1,
+"height_cm": 2.4,
+"depth_cm": 37.8
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"beauty",
+"standard"
+]
+},
+"created_at": "2025-08-15T00:57:13Z",
+"updated_at": "2025-08-15T00:57:13Z"
+},
+{
+"id": "768fb937-df99-469e-84d9-2722c9ccee2a",
+"product_name": "LED Desk Lamp",
+"category": "beauty",
+"sku": "SKU-800356",
+"ean13": "7896711999872",
+"price_cents": 15214,
+"currency": "BRL",
+"stock_count": 174,
+"status": "active",
+"dimensions": {
+"weight_grams": 1423,
+"width_cm": 34.9,
+"height_cm": 12.1,
+"depth_cm": 38.4
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"beauty",
+"standard"
+]
+},
+"created_at": "2025-08-14T22:20:19Z",
+"updated_at": "2025-08-14T22:20:19Z"
+},
+{
+"id": "b59f5f07-13b0-43ac-8217-f44c2ca7045d",
+"product_name": "Portable SSD 1TB",
+"category": "office",
+"sku": "SKU-747657",
+"ean13": "7894107568262",
+"price_cents": 43931,
+"currency": "BRL",
+"stock_count": 163,
+"status": "active",
+"dimensions": {
+"weight_grams": 1698,
+"width_cm": 9.5,
+"height_cm": 8.3,
+"depth_cm": 32.0
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"office",
+"standard"
+]
+},
+"created_at": "2025-08-12T01:14:18Z",
+"updated_at": "2025-08-12T01:14:18Z"
+},
+{
+"id": "2b83a293-8e1b-4709-9a64-51ec0c688618",
+"product_name": "Shampoo Hydrate 300ml",
+"category": "books",
+"sku": "SKU-312874",
+"ean13": "7898208048054",
+"price_cents": 42531,
+"currency": "BRL",
+"stock_count": 190,
+"status": "active",
+"dimensions": {
+"weight_grams": 4824,
+"width_cm": 22.4,
+"height_cm": 33.6,
+"depth_cm": 17.6
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"books",
+"standard"
+]
+},
+"created_at": "2025-08-20T19:26:11Z",
+"updated_at": "2025-08-20T19:26:11Z"
+},
+{
+"id": "0a3961ca-bcd9-49ad-b6eb-996d4cbc80a7",
+"product_name": "Running Shoes Model X",
+"category": "office",
+"sku": "SKU-756837",
+"ean13": "7890545726151",
+"price_cents": 31832,
+"currency": "BRL",
+"stock_count": 130,
+"status": "active",
+"dimensions": {
+"weight_grams": 2335,
+"width_cm": 35.1,
+"height_cm": 35.2,
+"depth_cm": 14.9
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"office",
+"standard"
+]
+},
+"created_at": "2025-08-11T17:12:32Z",
+"updated_at": "2025-08-11T17:12:32Z"
+},
+{
+"id": "b8c28cc9-331e-4b01-83ec-84cece2fb2a9",
+"product_name": "Smart Plug Wi-Fi",
+"category": "pets",
+"sku": "SKU-209362",
+"ean13": "7890741266156",
+"price_cents": 20192,
+"currency": "BRL",
+"stock_count": 30,
+"status": "active",
+"dimensions": {
+"weight_grams": 3431,
+"width_cm": 26.2,
+"height_cm": 6.1,
+"depth_cm": 11.5
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"pets",
+"standard"
+]
+},
+"created_at": "2025-08-22T12:34:06Z",
+"updated_at": "2025-08-22T12:34:06Z"
+},
+{
+"id": "a1c517c8-7e6c-4e85-9890-6bc11a9d5a4e",
+"product_name": "Dark Chocolate 70% 100g",
+"category": "sports",
+"sku": "SKU-680071",
+"ean13": "7899437167832",
+"price_cents": 31121,
+"currency": "BRL",
+"stock_count": 14,
+"status": "active",
+"dimensions": {
+"weight_grams": 1031,
+"width_cm": 12.5,
+"height_cm": 19.7,
+"depth_cm": 29.4
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"sports",
+"standard"
+]
+},
+"created_at": "2025-08-20T06:10:16Z",
+"updated_at": "2025-08-20T06:10:16Z"
+},
+{
+"id": "4b1703f7-f741-4eb7-9dbb-8a22608f8574",
+"product_name": "Mechanical Keyboard TKL",
+"category": "household",
+"sku": "SKU-303705",
+"ean13": "7892111484116",
+"price_cents": 15544,
+"currency": "BRL",
+"stock_count": 89,
+"status": "active",
+"dimensions": {
+"weight_grams": 1364,
+"width_cm": 23.6,
+"height_cm": 28.1,
+"depth_cm": 8.6
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"household",
+"standard"
+]
+},
+"created_at": "2025-08-27T20:56:27Z",
+"updated_at": "2025-08-27T20:56:27Z"
+},
+{
+"id": "7cea0591-3f43-46b5-8b68-b9c36e66c7d4",
+"product_name": "Screen Cleaner Kit",
+"category": "books",
+"sku": "SKU-152842",
+"ean13": "7893855863542",
+"price_cents": 22088,
+"currency": "BRL",
+"stock_count": 242,
+"status": "active",
+"dimensions": {
+"weight_grams": 1712,
+"width_cm": 8.3,
+"height_cm": 10.7,
+"depth_cm": 27.6
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"books",
+"standard"
+]
+},
+"created_at": "2025-08-22T04:07:29Z",
+"updated_at": "2025-08-22T04:07:29Z"
+},
+{
+"id": "58a6b7b1-a57f-4d94-9c12-e2fc3b5d51d9",
+"product_name": "Travel Mug 400ml",
+"category": "toys",
+"sku": "SKU-741004",
+"ean13": "7898807441562",
+"price_cents": 37939,
+"currency": "BRL",
+"stock_count": 162,
+"status": "active",
+"dimensions": {
+"weight_grams": 1246,
+"width_cm": 36.9,
+"height_cm": 12.3,
+"depth_cm": 28.1
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"toys",
+"standard"
+]
+},
+"created_at": "2025-08-08T19:54:51Z",
+"updated_at": "2025-08-08T19:54:51Z"
+},
+{
+"id": "1a5b274b-29a3-4f17-8321-2d6bf4f0907e",
+"product_name": "Portable SSD 1TB",
+"category": "office",
+"sku": "SKU-603735",
+"ean13": "7898487252068",
+"price_cents": 39521,
+"currency": "BRL",
+"stock_count": 39,
+"status": "active",
+"dimensions": {
+"weight_grams": 1903,
+"width_cm": 2.2,
+"height_cm": 6.7,
+"depth_cm": 28.1
+},
+"metadata": {
+"brand": "AcmeCo",
+"tags": [
+"office",
+"standard"
+]
+},
+"created_at": "2025-08-06T08:04:23Z",
+"updated_at": "2025-08-06T08:04:23Z"
+}
+]
+}
+
